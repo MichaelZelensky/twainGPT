@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "train": "ts-node tokenizer/train.ts data/sample.txt",
+    "tokenize": "ts-node tokenizer/main.ts",
     "test": "ts-node tokenizer/test.ts",
-    "run": "npm run train && npm run test"
+    "run": "npm run tokenize -- data/sample.txt && npm run test"
   },
   "repository": {
     "type": "git",
