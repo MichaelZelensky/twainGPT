@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "train": "ts-node tokenizer/train.ts data/sample.txt",
+    "test": "ts-node tokenizer/test.ts",
+    "run": "npm run train && npm run test"
   },
   "repository": {
     "type": "git",

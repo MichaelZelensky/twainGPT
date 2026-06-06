@@ -1,5 +1,5 @@
 import fs from "fs";
-import { encode } from "./tokenizer/encode";
+import { encode } from "./encode";
 
 const merges: string[] = JSON.parse(
   fs.readFileSync("./tokenizer/vocab.json", "utf-8")
