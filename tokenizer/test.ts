@@ -2,7 +2,7 @@ import fs from "fs";
 import { encode } from "./encode";
 
 const merges: string[] = JSON.parse(
-  fs.readFileSync("./tokenizer/vocab.json", "utf-8")
+  fs.readFileSync("./tokenizer/merges.json", "utf-8")
 );
 
 const text = "hello world";
